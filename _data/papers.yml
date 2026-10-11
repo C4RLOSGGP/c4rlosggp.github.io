@@ -1,0 +1,120 @@
+# YOUR PAPERS, newest first, grouped by year.
+#
+# To add a paper: copy one block (from "- title:" down to the end of its bibtex),
+# paste it at the top of the right year, and change the details.
+# Put your own name between ** ** to make it bold.
+# badge = the small coloured label (JHEP, PRD, PRL, ...). Leave out any line you don't have.
+# For a new year, copy a whole "- year:" block.
+
+- year: 2025
+  papers:
+    - title: "Weak scale triggers in the SMEFT"
+      authors: "**Pier Giuseppe Catinari**, Raffaele Tito D’Agnolo, and Pablo Sesma"
+      journal: "JHEP 04 (2026) 148"
+      badge: "JHEP"
+      arxiv: "2512.11026"
+      doi: "10.1007/JHEP04(2026)148"
+      inspire: "3092483"
+      bibtex: |
+        @article{Catinari:2025zya,
+            author = "Catinari, Pier Giuseppe and Tito D'Agnolo, Raffaele and Sesma, Pablo",
+            title = "{Weak scale triggers in the SMEFT}",
+            eprint = "2512.11026",
+            archivePrefix = "arXiv",
+            primaryClass = "hep-ph",
+            doi = "10.1007/JHEP04(2026)148",
+            journal = "JHEP",
+            volume = "04",
+            pages = "148",
+            year = "2026"
+        }
+
+    - title: "Insights into the highest natural scale: Finite naturalness challenges inflationary dynamics"
+      authors: "**Pier Giuseppe Catinari**, Loris Del Grosso, Luca Di Giovanni, and Alfredo Urbano"
+      journal: "Phys. Rev. D 112, L121302 (2025)"
+      badge: "PRD"
+      arxiv: "2504.17846"
+      doi: "10.1103/mx5j-wtqf"
+      inspire: "2915594"
+      bibtex: |
+        @article{Catinari:2025itc,
+            author = "Catinari, Pier Giuseppe and Del Grosso, Loris and Di Giovanni, Luca and Urbano, Alfredo",
+            title = "{Insights into the highest natural scale: Finite naturalness challenges inflationary dynamics}",
+            eprint = "2504.17846",
+            archivePrefix = "arXiv",
+            primaryClass = "hep-ph",
+            doi = "10.1103/mx5j-wtqf",
+            journal = "Phys. Rev. D",
+            volume = "112",
+            number = "12",
+            pages = "L121302",
+            year = "2025"
+        }
+
+- year: 2024
+  papers:
+    - title: "Hunting axion dark matter with antiferromagnets: A case study with nickel oxide"
+      authors: "**Pier Giuseppe Catinari**, Angelo Esposito, and Shashin Pavaskar"
+      journal: "Phys. Rev. D 112, 035007 (2025)"
+      badge: "PRD"
+      arxiv: "2411.11971"
+      doi: "10.1103/k6pg-bkwh"
+      inspire: "2849906"
+      bibtex: |
+        @article{Catinari:2024ekq,
+            author = "Catinari, Pier Giuseppe and Esposito, Angelo and Pavaskar, Shashin",
+            title = "{Hunting axion dark matter with antiferromagnets: A case study with nickel oxide}",
+            eprint = "2411.11971",
+            archivePrefix = "arXiv",
+            primaryClass = "hep-ph",
+            doi = "10.1103/k6pg-bkwh",
+            journal = "Phys. Rev. D",
+            volume = "112",
+            number = "3",
+            pages = "035007",
+            year = "2025"
+        }
+
+    - title: "Effective field theory for anisotropic antiferromagnets: Gapped Goldstone bosons, pseudo-Goldstone excitations, and phase transitions"
+      authors: "**Pier Giuseppe Catinari**, Angelo Esposito, and Shashin Pavaskar"
+      journal: "Phys. Rev. B 112, 064408 (2025)"
+      badge: "PRB"
+      arxiv: "2411.09761"
+      doi: "10.1103/msy3-ztxr"
+      inspire: "2958155"
+      bibtex: |
+        @article{Catinari:2024qap,
+            author = "Catinari, Pier Giuseppe and Esposito, Angelo and Pavaskar, Shashin",
+            title = "{Effective field theory for anisotropic antiferromagnets: Gapped Goldstone bosons, pseudo-Goldstone excitations, and phase transitions}",
+            eprint = "2411.09761",
+            archivePrefix = "arXiv",
+            primaryClass = "cond-mat.str-el",
+            doi = "10.1103/msy3-ztxr",
+            journal = "Phys. Rev. B",
+            volume = "112",
+            number = "6",
+            pages = "064408",
+            year = "2025"
+        }
+
+    - title: "Gravitational instantons and the quality problem of the QCD axion: Facts, speculations, and statements in between"
+      authors: "**Pier Giuseppe Catinari** and Alfredo Urbano"
+      journal: "Phys. Rev. D 111, 125007 (2025)"
+      badge: "PRD"
+      arxiv: "2410.12741"
+      doi: "10.1103/n5nz-8232"
+      inspire: "2840915"
+      bibtex: |
+        @article{Catinari:2024zon,
+            author = "Catinari, Pier Giuseppe and Urbano, Alfredo",
+            title = "{Gravitational instantons and the quality problem of the QCD axion: Facts, speculations, and statements in between}",
+            eprint = "2410.12741",
+            archivePrefix = "arXiv",
+            primaryClass = "hep-th",
+            doi = "10.1103/n5nz-8232",
+            journal = "Phys. Rev. D",
+            volume = "111",
+            number = "12",
+            pages = "125007",
+            year = "2025"
+        }

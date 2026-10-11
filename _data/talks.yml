@@ -1,0 +1,61 @@
+# YOUR TALKS, newest first.
+#
+# To add a talk: copy one block (from "- date:" to the end of its links),
+# paste it at the top, and change the details.
+# "links" is optional: add slides, video or the event page as in the examples,
+# or delete the "links:" lines if there are none.
+
+- date: "Jun 2026"
+  title: "Topological gauge dynamics of Standard Model θ vacua"
+  where: "Theory seminar, IFAE, Barcelona, Spain"
+  links:
+    - name: "Event"
+      url: "https://indico.ifae.es/event/2558/"
+
+- date: "Oct 2025"
+  title: "Hunting axion dark matter with antiferromagnets"
+  where: "LawPhysics online seminar series (host: Walter Tangarife, Loyola University Chicago)"
+  links:
+    - name: "Video"
+      url: "https://www.youtube.com/watch?v=vqQmqq_Qr58"
+    - name: "Event"
+      url: "https://lawphysics.wordpress.com/2025/09/28/w186-pier-giuseppe-catinari-hunting-axion-dark-matter-with-antiferromagnets/"
+
+- date: "Mar 2025"
+  title: "Hunting axion dark matter with anti-ferromagnets: a case study with nickel oxide"
+  where: "Theory seminar, INFN Laboratori Nazionali di Frascati, Italy"
+  links:
+    - name: "Event"
+      url: "https://agenda.infn.it/event/46075/"
+
+- date: "2024"
+  title: "Theory seminar"
+  where: "University of Pennsylvania, Philadelphia, USA"
+
+- date: "2024"
+  title: "Theory seminar"
+  where: "Carnegie Mellon University, Pittsburgh, USA"
+
+- date: "Oct 2024"
+  title: "Effective Field Theories in Dark Matter Hunting: Spin-Dependent Interactions in Optimal Anti-Ferromagnetic Materials"
+  where: "Theory seminar, Columbia University, New York, USA"
+  links:
+    - name: "Event"
+      url: "https://het.physics.columbia.edu/events/pier-giuseppe-catinari-ssas-rome"
+
+- date: "Oct 2024"
+  title: "COSMIC WISPers WG4 meeting"
+  where: "Sofia University, Bulgaria"
+
+- date: "2024"
+  title: "Theory seminar"
+  where: "Johns Hopkins University, Baltimore, USA"
+
+- date: "Apr 2024"
+  title: "Insights into the highest natural scale"
+  where: "Lightning talk, New Physics Directions in the LHC era and beyond, MPIK Heidelberg, Germany"
+  links:
+    - name: "Slides"
+      url: "https://indico.global/event/6518/contributions/53230/attachments/26864/46528/LightningTalk_Pier_Giuseppe.pdf"
+    - name: "Event"
+      url: "https://indico.global/event/6518/contributions/53230/"

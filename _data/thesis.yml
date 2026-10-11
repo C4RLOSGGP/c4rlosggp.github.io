@@ -1,0 +1,15 @@
+# YOUR PHD THESIS
+
+title: "Aspects of BSM physics: quality problem, axion detection and naturalness"
+note: "PhD thesis, Sapienza University of Rome (2026)"
+advisors: "Angelo Esposito and Alfredo Urbano"
+url: "https://iris.uniroma1.it/handle/11573/1758771"
+pdf: "https://iris.uniroma1.it/bitstream/11573/1758771/1/Tesi_dottorato_Catinari.pdf"
+inspire: "3110941"
+bibtex: |
+  @phdthesis{Catinari:2026tdu,
+      author = "Catinari, Pier Giuseppe",
+      title = "{Aspects of BSM physics: quality problem, axion detection and naturalness}",
+      school = "Rome U., U. Rome La Sapienza (main)",
+      year = "2026"
+  }

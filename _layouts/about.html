@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<header class="post-header">
+  <h1>{{ site.name_first }} <b>{{ site.name_last }}</b></h1>
+  <p class="desc">{{ site.tagline }}</p>
+</header>
+
+<article class="bio">
+  <div class="profile">
+    <div class="avatar"><img src="photo.jpg" alt="{{ site.title }}" onerror="this.remove()"></div>
+    <div class="more-info">
+      {% for e in site.emails %}<p><a href="mailto:{{ e }}">{{ e }}</a></p>
+      {% endfor %}
+    </div>
+  </div>
+{{ content }}
+</article>
+
+<nav class="cards" aria-label="Sections">
+  <a class="card" href="research.html"><span class="ico"><i class="fa-solid fa-flask" aria-hidden="true"></i></span><b>Research</b></a>
+  <a class="card" href="publications.html"><span class="ico"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span><b>Publications</b></a>
+  <a class="card" href="talks.html"><span class="ico"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></span><b>Talks</b></a>
+  <a class="card" href="cv.html"><span class="ico"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></span><b>CV</b></a>
+</nav>
+
+<h2 class="section"><a href="publications.html">Recent publications</a></h2>
+<ol class="bibliography">
+{% assign shown = 0 %}{% for group in site.data.papers %}{% for p in group.papers %}{% if shown < 3 %}
+  <li class="entry">
+    <span class="abbr">{{ p.badge }}</span>
+    <div>
+      <a class="title" href="https://arxiv.org/abs/{{ p.arxiv }}">{{ p.title }}</a>
+      <div class="author">{{ p.authors | markdownify | remove: "<p>" | remove: "</p>" | strip }}</div>
+      <div class="periodical">{{ p.journal }}</div>
+      <div class="links">{% if p.arxiv %}<a href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}{% if p.inspire %}<a href="https://inspirehep.net/literature/{{ p.inspire }}">INSPIRE</a>{% endif %}{% if p.bibtex %}<button class="bib-btn" type="button" aria-expanded="false" aria-controls="home-bib-{{ p.arxiv }}">Bib</button>{% endif %}</div>
+      {% if p.bibtex %}<pre class="bibtex" id="home-bib-{{ p.arxiv }}" hidden>{{ p.bibtex | strip | escape }}</pre>{% endif %}
+    </div>
+  </li>{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}{% endfor %}
+</ol>
+
+<div class="social">
+  <div class="contact-icons">
+    <a href="cv.html" title="CV" aria-label="CV"><i class="ai ai-cv" aria-hidden="true"></i></a>
+    <a href="mailto:{{ site.emails[0] }}" title="Email" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+    <a href="{{ site.inspire }}" title="INSPIRE-HEP" aria-label="INSPIRE-HEP"><i class="ai ai-inspire" aria-hidden="true"></i></a>
+    <a href="{{ site.arxiv | escape }}" title="arXiv" aria-label="arXiv"><i class="ai ai-arxiv" aria-hidden="true"></i></a>
+    <a href="{{ site.orcid }}" title="ORCID" aria-label="ORCID"><i class="ai ai-orcid" aria-hidden="true"></i></a>
+  </div>
+  <p class="contact-note">Feel free to email me with any questions.</p>
+</div>

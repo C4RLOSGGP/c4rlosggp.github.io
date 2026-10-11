@@ -1,0 +1,25 @@
+# YOUR CV PAGE
+#
+# Each line has a date ("when") and a description ("what").
+# Links are written as [text](https://address).
+# To add a line, copy a "- when:" block and edit it.
+
+positions:
+  - when: "2026 – now"
+    what: "Postdoctoral researcher, Cornell University, Ithaca, USA"
+  - when: "2026 – now"
+    what: "Postdoctoral researcher, Weizmann Institute of Science, Rehovot, Israel"
+
+visits:
+  - when: "Fall 2024"
+    what: "Johns Hopkins University, Baltimore, with David E. Kaplan and Surjeet Rajendran"
+  - when: "Summer 2024"
+    what: "Institut de Physique Théorique, Saclay, with Raffaele Tito D’Agnolo"
+
+education:
+  - when: "2022 – 2026"
+    what: "PhD in Physics, Sapienza University of Rome. Advisors: Angelo Esposito and Alfredo Urbano. Thesis: [Aspects of BSM physics: quality problem, axion detection and naturalness](https://iris.uniroma1.it/handle/11573/1758771)"
+  - when: "2022"
+    what: "MSc in Theoretical Physics, Sapienza University of Rome. Advisor: Alfredo Urbano"
+  - when: "2019"
+    what: "BSc in Physics, Sapienza University of Rome. Advisor: G. Martinelli"

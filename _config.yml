@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------
+#  YOUR DETAILS
+#  Change the text inside the quotes. Keep the quotes.
+# ---------------------------------------------------------------
+
+title: "Pier Giuseppe Catinari"
+name_first: "Pier Giuseppe"
+name_last: "Catinari"
+
+# The line under your name on the home page
+tagline: "Postdoctoral researcher in theoretical physics · Cornell University & Weizmann Institute of Science"
+
+# Shown by Google and when someone shares your link
+description: "Pier Giuseppe Catinari, theoretical physicist at Cornell University and the Weizmann Institute of Science: axions, dark matter detection, naturalness and effective field theory."
+
+# Shown under your photo (add or remove lines starting with "-")
+emails:
+  - "pgc45@cornell.edu"
+  - "pier-giuseppe.catinari@weizmann.ac.il"
+
+# Profile links (the icons at the bottom of the home page)
+inspire: "https://inspirehep.net/authors/2841452"
+arxiv: "https://arxiv.org/search/?searchtype=author&query=Catinari%2C+P+G"
+orcid: "https://orcid.org/0009-0008-5416-1770"
+
+# Shown in the footer of every page
+last_updated: "October 2026"
+
+
+# ---------------------------------------------------------------
+#  Technical settings: no need to change anything below
+# ---------------------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+exclude:
+  - README.md

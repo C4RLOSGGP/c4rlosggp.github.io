@@ -1,0 +1,39 @@
+---
+layout: default
+title: Publications
+nav: Publications
+desc: "In reverse chronological order. Also on [INSPIRE-HEP](https://inspirehep.net/authors/2841452) and [arXiv](https://arxiv.org/search/?searchtype=author&query=Catinari%2C+P+G); authors are listed alphabetically."
+---
+<!-- The papers come from _data/papers.yml: edit that file, not this one. -->
+{% for group in site.data.papers %}
+<h2 class="year">{{ group.year }}</h2>
+<ol class="bibliography">
+{% for p in group.papers %}
+  <li class="entry">
+    <span class="abbr">{{ p.badge }}</span>
+    <div>
+      <a class="title" href="https://arxiv.org/abs/{{ p.arxiv }}">{{ p.title }}</a>
+      <div class="author">{{ p.authors | markdownify | remove: "<p>" | remove: "</p>" | strip }}</div>
+      <div class="periodical">{{ p.journal }}</div>
+      <div class="links">{% if p.arxiv %}<a href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}{% if p.inspire %}<a href="https://inspirehep.net/literature/{{ p.inspire }}">INSPIRE</a>{% endif %}{% if p.bibtex %}<button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-{{ p.arxiv }}">Bib</button>{% endif %}</div>
+      {% if p.bibtex %}<pre class="bibtex" id="bib-{{ p.arxiv }}" hidden>{{ p.bibtex | strip | escape }}</pre>{% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ol>
+{% endfor %}
+
+{% assign t = site.data.thesis %}
+<h2 class="year">PhD thesis</h2>
+<ol class="bibliography">
+  <li class="entry">
+    <span class="abbr">PhD</span>
+    <div>
+      <a class="title" href="{{ t.url }}">{{ t.title }}</a>
+      <div class="author"><strong>{{ site.title }}</strong>. Advisors: {{ t.advisors }}</div>
+      <div class="periodical">{{ t.note }}</div>
+      <div class="links">{% if t.pdf %}<a href="{{ t.pdf }}">PDF</a>{% endif %}<a href="{{ t.url }}">IRIS</a>{% if t.inspire %}<a href="https://inspirehep.net/literature/{{ t.inspire }}">INSPIRE</a>{% endif %}{% if t.bibtex %}<button class="bib-btn" type="button" aria-expanded="false" aria-controls="bib-thesis">Bib</button>{% endif %}</div>
+      {% if t.bibtex %}<pre class="bibtex" id="bib-thesis" hidden>{{ t.bibtex | strip | escape }}</pre>{% endif %}
+    </div>
+  </li>
+</ol>

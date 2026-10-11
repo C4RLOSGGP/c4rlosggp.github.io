@@ -1,0 +1,20 @@
+---
+layout: default
+title: Talks
+nav: Talks
+desc: "Seminars and conference talks, with slides and recordings where available."
+rule: true
+---
+<!-- The talks come from _data/talks.yml: edit that file, not this one. -->
+<ol class="bibliography">
+{% for t in site.data.talks %}
+  <li class="entry">
+    <span class="abbr soft">{{ t.date }}</span>
+    <div>
+      <div class="title">{{ t.title }}</div>
+      <div class="periodical">{{ t.where }}</div>
+      {% if t.links %}<div class="links">{% for l in t.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% endfor %}</div>{% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ol>

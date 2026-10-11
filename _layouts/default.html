@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ site.description }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
+<meta property="og:description" content="{{ site.description }}">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+{% if site.preview %}<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>{% else %}<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">{% endif %}
+<link rel="stylesheet" href="style.css">
+</head>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+<header class="topbar">
+  <div class="bar">
+    <a class="brand" href="./">{{ site.name_first }} <b>{{ site.name_last }}</b></a>
+    <nav aria-label="Main">
+      <a href="./"{% if page.nav == "About" %} aria-current="page"{% endif %}>About</a>
+      <a href="research.html"{% if page.nav == "Research" %} aria-current="page"{% endif %}>Research</a>
+      <a href="publications.html"{% if page.nav == "Publications" %} aria-current="page"{% endif %}>Publications</a>
+      <a href="talks.html"{% if page.nav == "Talks" %} aria-current="page"{% endif %}>Talks</a>
+      <a href="cv.html"{% if page.nav == "CV" %} aria-current="page"{% endif %}>CV</a>
+      <button class="theme-toggle" type="button" title="Change theme" aria-label="Change theme"><i class="fa-solid fa-circle-half-stroke t-system" aria-hidden="true"></i><i class="fa-solid fa-moon t-dark" aria-hidden="true"></i><i class="fa-solid fa-sun t-light" aria-hidden="true"></i></button>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+<div class="post">
+{% if page.title %}<header class="post-header">
+  <h1>{{ page.title }}</h1>
+  {% if page.desc %}<p class="desc">{{ page.desc | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>{% endif %}
+  {% if page.rule %}<hr>{% endif %}
+</header>
+{% endif %}
+{{ content }}
+</div>
+</main>
+
+<footer class="foot">© Copyright 2026 {{ site.title }}. Hosted by GitHub Pages. Last updated {{ site.last_updated }}.
+{% if page.background == "board" or site.preview %}<small class="credit-board">Background: one of my blackboards.</small>{% endif %}
+{% if page.background != "board" or site.preview %}<small class="credit-ring">Background: <a href="https://esahubble.org/images/heic0709a/">dark matter ring in galaxy cluster Cl 0024+17</a>. NASA, ESA, M.J. Jee and H. Ford (Johns Hopkins University).</small>{% endif %}
+</footer>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.querySelector('.theme-toggle');
+  function mode() { return root.getAttribute('data-theme') || 'system'; }
+  if (btn) {
+    btn.dataset.mode = mode();
+    btn.addEventListener('click', function () {
+      var order = ['system', 'dark', 'light'], next = order[(order.indexOf(mode()) + 1) % 3];
+      if (next === 'system') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', next);
+      btn.dataset.mode = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('.bib-btn'); if (!b) return;
+    var pre = document.getElementById(b.getAttribute('aria-controls')); if (!pre) return;
+    pre.hidden = !pre.hidden; b.setAttribute('aria-expanded', String(!pre.hidden));
+  });
+})();
+</script>
+</body>
+</html>

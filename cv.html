@@ -1,0 +1,26 @@
+---
+layout: default
+title: CV
+nav: CV
+desc: "Curriculum vitae. You can also download the PDF directly."
+---
+<!-- The CV lines come from _data/cv.yml: edit that file, not this one. -->
+<p class="cv-download"><a class="btn-main" href="cv.pdf"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>Download CV (PDF)</a></p>
+
+<h2 class="year">Positions</h2>
+<ul class="dated">
+{% for x in site.data.cv.positions %}  <li><span class="when">{{ x.when }}</span><span>{{ x.what | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
+{% endfor %}</ul>
+
+<h2 class="year">Research visits</h2>
+<ul class="dated">
+{% for x in site.data.cv.visits %}  <li><span class="when">{{ x.when }}</span><span>{{ x.what | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
+{% endfor %}</ul>
+
+<h2 class="year">Education</h2>
+<ul class="dated">
+{% for x in site.data.cv.education %}  <li><span class="when">{{ x.when }}</span><span>{{ x.what | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
+{% endfor %}</ul>
+
+<h2 class="year">Publications and talks</h2>
+<p>See <a href="publications.html">Publications</a> and <a href="talks.html">Talks</a>.</p>
