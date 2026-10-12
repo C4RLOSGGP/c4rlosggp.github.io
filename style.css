@@ -90,7 +90,7 @@ h1, h2, h3 { font-family: var(--f-display); letter-spacing: -.01em; text-wrap: b
 .more-info p { margin: 0 0 6px; }
 .bio::after { content: ""; display: block; clear: both; }
 
-.cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 18px 0 40px; }
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 18px 0 40px; }
 .card {
   display: grid; justify-items: center; gap: 8px; padding: 20px 10px 18px;
   border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink);
