@@ -24,10 +24,10 @@ arxiv: "https://arxiv.org/search/?searchtype=author&query=Catinari%2C+P+G"
 orcid: "https://orcid.org/0009-0008-5416-1770"
 
 # Shown in the footer of every page
-last_updated: "October 2026"
-
- url: "https://pier24catinari.github.io"
-plugins:
+ 27|last_updated: "October 2026"
+ 28|
+ 29| url: "https://pier24catinari.github.io"
+ 30|plugins:
   - jekyll-sitemap
 
 # ---------------------------------------------------------------
