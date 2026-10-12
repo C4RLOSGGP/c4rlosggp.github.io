@@ -41,11 +41,11 @@
     - name: "Event"
       url: "https://agenda.infn.it/event/46075/"
 
-- date: "2024"
+- date: "Oct 2024"
   title: "Theory seminar"
   where: "University of Pennsylvania, Philadelphia, USA"
 
-- date: "2024"
+- date: "Oct 2024"
   title: "Theory seminar"
   where: "Carnegie Mellon University, Pittsburgh, USA"
 
@@ -60,7 +60,7 @@
   title: "COSMIC WISPers WG4 meeting"
   where: "Sofia University, Bulgaria"
 
-- date: "2024"
+- date: "Sep 2024"
   title: "Theory seminar"
   where: "Johns Hopkins University, Baltimore, USA"
 
